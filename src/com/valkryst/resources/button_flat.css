@@ -1,0 +1,20 @@
+/** Button */
+.button {
+    -fx-max-width: 2147483647; /* Setting the max width to an unreasonable number forces all buttons to be the size of the largest button on the screen. */
+    -fx-background-color: button-gradient-bottom-color;
+    -fx-text-fill: text-color;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent
+}
+
+.button:hover {
+    -fx-background-color: menu-item-hover-color;
+}
+
+.button:armed {
+    -fx-background-color: menu-item-selected-color;
+}
+
+.button:armed, .button:hover, .button:focused {
+    -fx-border-color: transparent;
+}
